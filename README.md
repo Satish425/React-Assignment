@@ -109,7 +109,7 @@ http://localhost:5173
 ## 🌐 Deployed Application
 
 **Live URL:**
-👉 *Add your deployed Vercel/Netlify link here*
+http://react-assignment-livid-six.vercel.app/
 
 ---
 
@@ -121,16 +121,7 @@ A Loom video walkthrough is included demonstrating:
 * State management
 * Editing, deleting, and filtering features
 * Key technical decisions
-
----
-
-## ✨ Future Improvements (Optional)
-
-* Pagination for large datasets
-* Edit-on-click with save/cancel buttons
-* Better UI styling
-* Keyboard accessibility improvements
-
+  
 ---
 
 ## 👤 Author
