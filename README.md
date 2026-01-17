@@ -46,7 +46,7 @@ No third-party table or filter libraries were used.
 src/
 ├── dummyData/
 │   └── dummyAPI.js        # Mock API (Promise + setTimeout)
-├── products.json          # Local dummy product data
+│   └── products.json          # Local dummy product data
 ├── App.jsx                # Main component (table, filters, logic)
 ├── main.jsx
 └── index.css
