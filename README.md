@@ -113,17 +113,6 @@ http://react-assignment-livid-six.vercel.app/
 
 ---
 
-## 📹 Loom Video
-
-A Loom video walkthrough is included demonstrating:
-
-* Codebase structure
-* State management
-* Editing, deleting, and filtering features
-* Key technical decisions
-  
----
-
 ## 👤 Author
 
 **Satish Kumar**
