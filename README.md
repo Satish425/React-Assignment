@@ -1,16 +1,146 @@
-# React + Vite
+# Product Table – React Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This project is a **React application built using Vite** that displays product data in a table with editable fields, row deletion, and dynamic column-based filters.
+The application uses **locally stored dummy data** and a **mock API** implemented with `Promise` and `setTimeout` to simulate real backend behavior.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed as part of a **Frontend / Fullstack Engineer Intern Assignment**.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* Display product data in a table
+* Editable **Title** column (inline editing)
+* Delete individual product rows
+* Dropdown filters for **each column**:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Title
+  * Brand
+  * Category
+  * Price
+  * Rating
+* Dynamic filter options based on currently filtered results
+* Reset Filters button
+* Loading state while fetching data
+* Error handling for API failures
+* “No results found” message when filters return no data
+
+---
+
+## 🛠️ Tech Stack
+
+* **React** (Functional Components & Hooks)
+* **Vite** (Build Tool)
+* **JavaScript**
+* **CSS (basic styling)**
+
+No third-party table or filter libraries were used.
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+├── dummyData/
+│   └── dummyAPI.js        # Mock API (Promise + setTimeout)
+├── products.json          # Local dummy product data
+├── App.jsx                # Main component (table, filters, logic)
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone <your-github-repo-url>
+cd <project-folder>
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the application
+
+```bash
+npm run dev
+```
+
+The app will be available at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔄 Data Handling Approach
+
+* Product data was copied once from **dummyjson.com**
+* Data is stored locally in `products.json`
+* A mock API (`dummyAPI.js`) simulates:
+
+  * Fetching products
+  * Updating product titles
+  * Deleting products
+* All API functions return Promises with artificial delays using `setTimeout`
+
+---
+
+## 🧠 Key Implementation Details
+
+* Filters are stored in a single state object
+* All filters are applied together to generate filtered results
+* Dropdown filter values are dynamically derived from the currently filtered dataset
+* Inline title editing updates both local state and mock API
+* UI updates instantly after edit or delete operations
+
+---
+
+## 🌐 Deployed Application
+
+**Live URL:**
+👉 *Add your deployed Vercel/Netlify link here*
+
+---
+
+## 📹 Loom Video
+
+A Loom video walkthrough is included demonstrating:
+
+* Codebase structure
+* State management
+* Editing, deleting, and filtering features
+* Key technical decisions
+
+---
+
+## ✨ Future Improvements (Optional)
+
+* Pagination for large datasets
+* Edit-on-click with save/cancel buttons
+* Better UI styling
+* Keyboard accessibility improvements
+
+---
+
+## 👤 Author
+
+**Satish Kumar**
+
+---
+
+## ✅ Notes
+
+* No third-party table or filter libraries were used
+* Application follows assignment instructions strictly
+* Focus was kept on logic and functionality over styling
